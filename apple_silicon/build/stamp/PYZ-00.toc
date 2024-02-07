@@ -1,4 +1,4 @@
-('/Users/noda/Dropbox/tuat/TTlab/暇つぶし/stamp_downloder/build/stamp/PYZ-00.pyz',
+('/Users/noda/Documents/line_stamp_downloader/build/stamp/PYZ-00.pyz',
  [('PIL',
    '/Users/noda/anaconda3/envs/stamp_env/lib/python3.12/site-packages/PIL/__init__.py',
    'PYMODULE'),
