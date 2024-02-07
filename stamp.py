@@ -43,10 +43,38 @@ html_content = response.text
 # iphone_check=re.findall('iPhone',html_content)
 https_urls_p = re.findall(r"https://stickershop.line-scdn.net/stickershop\S*android\S*",html_content)
 https_urls_a = re.findall(r"https://stickershop.line-scdn.net/stickershop\S*iPhone\S*",html_content)
+https_urls_s = re.findall(r"https://stickershop.line-scdn.net/stickershop\S*m4a\S*",html_content)
 
+# if(len(https_urls_s) != 0 ):
+#     print("音声付きの画像スタンプです，画像のみを保存します")
+#     https_urls = re.findall(r"https://stickershop.line-scdn.net/stickershop\S*iPhone\S*",html_content)
+    
+#     # 抽出したURLを出力
+#     for i, url in enumerate(https_urls):
+#         # anime_url=re.findall("\S+animation\S+",url)
+#         # print(url)
+
+#         # if(i%4==0):
+#         url=url[:-11]
+#         print(url)
+#         # 画像をダウンロードして保存
+#         #ディレクトりなければ作る
+#         if not os.path.isdir(output_folder):
+#             os.makedirs(output_folder)
+#         img_name = os.path.basename(url)
+#         img_path = os.path.join(output_folder, str(i))
+#         with open(img_path+".png", 'wb') as img_file:
+#             img_response = requests.get(url)
+#             # print(img_response.content)
+#             img=img_response.content
+#             # print(type(img))
+#             img_file.write(img)
+# print(len(https_urls_a))
+# print(len(https_urls_p))
+# print(len(https_urls_s))
 if(len(https_urls_p)>len(https_urls_a)):
-    print("画像のスタンプです")
-    https_urls = re.findall(r"https://stickershop.line-scdn.net/stickershop\S*android\S*",html_content)
+    print("画像のスタンプです，画像を保存します")
+    https_urls = re.findall(r"https://stickershop.line-scdn.net/stickershop\S*android\S*png\S*",html_content)
     
     # 抽出したURLを出力
     for i, url in enumerate(https_urls):
@@ -69,13 +97,9 @@ if(len(https_urls_p)>len(https_urls_a)):
                 # print(type(img))
                 img_file.write(img)
 
-
-
-
-
 else:
     print("動画のスタンプです")
-    https_urls = re.findall(r"https://stickershop.line-scdn.net/stickershop\S*animation\S*",html_content)
+    https_urls = re.findall(r"https://stickershop.line-scdn.net/stickershop\S*iPhone\S*animation\S*",html_content)
    
     # 抽出したURLを出力
     for i, url in enumerate(https_urls):
