@@ -41,7 +41,7 @@ html_content = response.text
 ##動くスタンプをダウンロードしたい時
 
 iphone_check=re.findall('iPhone',html_content)
-if(len(iphone_check)==0):
+if(len(iphone_check)>10):
     print("画像のスタンプです")
     https_urls = re.findall(r"https://stickershop.line-scdn.net/stickershop\S*android\S*",html_content)
     
