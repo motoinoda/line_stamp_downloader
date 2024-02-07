@@ -1,4 +1,4 @@
-('/Users/matsunaga_hokitugi/Library/CloudStorage/Dropbox/tuat/TTlab/暇つぶし/stamp_downloder/build/stamp/PYZ-00.pyz',
+('/Users/matsunaga_hokitugi/Desktop/line_stamp_downloader/build/stamp/PYZ-00.pyz',
  [('PIL',
    '/Users/matsunaga_hokitugi/anaconda3/envs/stamp/lib/python3.12/site-packages/PIL/__init__.py',
    'PYMODULE'),
