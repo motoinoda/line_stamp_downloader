@@ -37,4 +37,4 @@
 - lineスタンプダウンロード
 - line sticker download，
 
-qq
+
