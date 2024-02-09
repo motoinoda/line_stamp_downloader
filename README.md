@@ -36,3 +36,5 @@
 - ラインスタンプダウンロード
 - lineスタンプダウンロード
 - line sticker download，
+
+qq
